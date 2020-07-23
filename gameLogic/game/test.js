@@ -1,0 +1,11 @@
+import { Game } from './Game';
+import { King } from './Pieces';
+var game = new Game('test1', 'test2');
+game.makeMove(6, 4, 5, 4);
+game.makeMove(1, 5, 2, 5);
+game.makeMove(6, 5, 4, 5);
+game.makeMove(1, 6, 3, 6);
+game.makeMove(7, 3, 3, 7);
+console.log(game.getAllMoves('Black'));
+console.log(game.playerIsCheck('Black'));
+console.log(game.isEndGame());
